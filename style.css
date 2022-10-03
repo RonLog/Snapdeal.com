@@ -212,6 +212,21 @@ nav {
     width: 90%;
 
 }
+.links{
+    width:90%;
+    margin: auto;
+}
+.links p a{
+    text-decoration: none;
+    color: black;
+}
+.links p a:first-child{
+    font-weight: bold;
+}
+.links p a:hover{
+    text-decoration: underline;
+    color: grey;
+}
 
 .newsletter {
     display: flex;
@@ -252,8 +267,13 @@ nav {
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
 }
-
+footer{
+    width:90%;
+    margin: auto;
+}
 .footdown {
+    width:90%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
