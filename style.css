@@ -279,3 +279,11 @@ footer{
     align-items: center;
     background-color: rgb(212, 211, 211);
 }
+#radius{
+    border-radius: 20px;
+}
+#flex{
+    display:flex;
+    align-items:center;
+    column-gap: 10px;
+}
