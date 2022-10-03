@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+
+}
+
+aside {
+  
+    border-radius: 5px;
+    height: 650px;
+    box-shadow: 10px 10px 5px black;
+}
+
+aside div ul {
+    margin: 5px 2px;
+    list-style: none;
+}
+
+aside div ul li {
+    margin: 5px 2px;
+}
+
+aside div ul li:first-child {
+    margin-top: 20px;
+}
+
+aside div ul li a {
+    text-decoration: none;
+    color: black;
+    
+    padding: 5px 5px;
+    font-size: small;
+
+}
+
+.top .mens {
+    height: 580px;
+    z-index: 1;
+}
+
+.top ul li a:hover {
+    background-color: lightgray;
+    border-left: 5px solid darkmagenta;
+}
+
+.top ul li .mens {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 130px;
+    left: 290px;
+    display: none;
+}
+
+.top ul li:hover .mens {
+    display: block;
+    display: flex;
+}
+
+.middle .mens {
+    height: 500px;
+    z-index: 1;
+}
+
+#mens1 {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgray;
+}
+
+.middle ul li a:hover {
+    background-color: lightgray;
+    border-left: 5px solid darkmagenta;
+
+}
+
+.middle ul li .mens {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 130px;
+    left: 290px;
+    display: none;
+}
+
+.middle ul li:hover .mens {
+    display: block;
+    display: flex;
+}
+
+.barcode {
+    margin-top: 30px;
+}
+
+
+.header {
+    background-color: darkorchid;
+}
+
+.headtop {
+    background-color: rgb(199, 0, 61);
+    display: flex;
+    justify-content: space-around;
+}
+
+.headtop span {
+    color: white;
+}
+
+.headtop .headtright span {
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(228, 0, 70);
+}
+
+.cartsign {
+    color: white;
+}
+
+.cartsign ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.cartsign ul li {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cartsign ul ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+
+.register h5 {
+    margin-bottom: 0;
+}
+
+.register h4 {
+    margin-top: 0;
+}
+
+.signin {
+    display: none;
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.signin ul li {
+    margin-right: 30px;
+}
+
+#sign:hover .signin {
+    display: block;
+}
+
+#sign:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.location {
+   
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px black;
+   
+}
+
+.location img {
+    width: 200px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.maincontent {
+    display: flex;
+    margin-top: 15px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.snapapp {
+    box-shadow: 10px 10px 5px black;
+    width: 90%;
+    margin: 30px auto;
+
+}
+
+.snapapp img {
+    width: 90%;
+
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px;
+}
+
+.newsletter ul {
+    list-style: none;
+}
+
+.newsletter ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.news1 ul li:not(:first-child):hover a {
+    text-decoration: underline;
+    color: grey;
+}
+
+.news1 p a {
+    text-decoration: none;
+}
+
+.news1 p a:hover {
+    text-decoration: underline;
+}
+
+.news1 ul li:first-child {
+    margin-bottom: 10px;
+}
+
+.paymentsocial {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.footdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 211, 211);
+}

@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapdeal Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/snapdealFavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="headtop">
+
+            <div class="headtleft">
+                <span>Brand Waali Quality, Bazaar Waali Deal! </span>
+            </div>
+            <div class="headtright">
+                <span>Impact@Snapdeal</span>
+                <span>Gift Cards</span>
+                <span>Help Center</span>
+                <span> Sell On Snapdeal</span>
+                <span><i class="fas fa-file-download"></i>&nbsp;Download App</span>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="/img/snapdeallogo.png" alt="">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search Products & Brands" name="search"
+                    style="width: 700px; height: 35px;border:none;border-radius:5px;">
+                <input type="button" value="Search"
+                    style="background-color: rgb(51,51,51);color:white;width:150px;height:35px;border:none;border-radius:5px;">
+            </div>
+            <div class="cartsign">
+                <ul>
+                    <li>Cart&nbsp;<i class="fas fa-shopping-cart" style="font-size: 20px;"></i></li>
+                    <li id="sign">Sign In&nbsp;<i class="fas fa-user-circle" style="font-size: 30px;"></i>
+                        <div class="signin">
+                            <ul>
+                                <li>Your Account</li>
+                                <li>Your Orders</li>
+                                <li>Shortlist</li>
+                            </ul>
+
+                            <div class="register">
+                                <h5>If you are a new user</h5>
+                                <h4>Register</h4>
+                                <input type="button" value="LOGIN"
+                                    style=" background-color: rgb(228,0,70);color:white;width:180px;height:30px;border:none;border-radius:5px;margin-bottom: 10px;">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+    <div class="maincontent">
+        <aside>
+            <div class="top">
+                <ul>
+                    <li><a href="TOPCATEGORIES" target="_blank"
+                            style="font-weight:bold;margin-top: 20px;">TOPCATEGORIES</a></li>
+                    <li><a href="Men'sFashion" target="_blank">Men'sFashion</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="FOOTWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FOOTWEAR</a></li>
+                                    <li><a href="SportsShoes" target="_blank">SportsShoes</a></li>
+                                    <li><a href="CasualShoes" target="_blank">CasualShoes</a></li>
+                                    <li><a href="Slippers&FlipFlops" target="_blank">Slippers&FlipFlops</a></li>
+                                    <li><a href="Sandals&Floaters" target="_blank">Sandals&Floaters</a></li>
+                                    <li><a href="FormalShoes" target="_blank">FormalShoes</a></li>
+                                    <li><a href="Loafers" target="_blank">Loafers</a></li>
+                                    <li><a href="Sneakers" target="_blank">Sneakers</a></li>
+                                    <li><a href="EthnicFootwear" target="_blank">EthnicFootwear</a></li>
+                                    <li><a href="ShoeAccessories" target="_blank">ShoeAccessories</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="BAGS&LUGGAGE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BAGS&LUGGAGE</a></li>
+                                    <li><a href="Backpacks" target="_blank">Backpacks</a></li>
+                                    <li><a href="LaptopBags" target="_blank">LaptopBags</a></li>
+                                    <li><a href="HikingBags" target="_blank">HikingBags</a></li>
+                                    <li><a href="Luggage&Suitcases" target="_blank">Luggage&Suitcases</a></li>
+                                    <li><a href="TravelAccessories" target="_blank">TravelAccessories</a></li>
+                                    <li><a href="OfficeBags" target="_blank">OfficeBags</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                            <div id="mens1" class="mens1">
+                                <ul>
+                                    <li><a href="CLOTHING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">CLOTHING</a></li>
+                                    <li><a href="T-Shirts&Polos" target="_blank">T-Shirts&Polos</a></li>
+                                    <li><a href="Shirts" target="_blank">Shirts</a></li>
+                                    <li><a href="Jeans" target="_blank">Jeans</a></li>
+                                    <li><a href="Trousers&Chinos" target="_blank">Trousers&Chinos</a></li>
+                                    <li><a href="Innerwear&Sleepwear" target="_blank">Innerwear&Sleepwear</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="WINTERWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">WINTERWEAR</a></li>
+                                    <li><a href="Jackets" target="_blank">Jackets</a></li>
+                                    <li><a href="Sweatshirts" target="_blank">Sweatshirts</a></li>
+                                    <li><a href="Sweaters" target="_blank">Sweaters</a></li>
+                                    <li><a href="Thermals" target="_blank">Thermals</a></li>
+                                    <li><a href="SPORTSWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">SPORTSWEAR</a></li>
+                                    <li><a href="T-Shirts&Polos" target="_blank">T-Shirts&Polos</a></li>
+                                    <li><a href="Trackpants&Tracksuits" target="_blank">Trackpants&Tracksuits</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="MEN'SGROOMING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">MEN'SGROOMING</a></li>
+                                    <li><a href="ShavingCreams&Gels" target="_blank">ShavingCreams&Gels</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="EYEWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">EYEWEAR</a></li>
+                                    <li><a href="Sunglasses" target="_blank">Sunglasses</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="WATCHES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">WATCHES</a></li>
+                                    <li><a href="JEWELLERY&CUFFLINKS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">JEWELLERY&CUFFLINKS</a></li>
+                                    <li><a href="ACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">ACCESSORIES</a></li>
+                                    <li><a href="Wallets" target="_blank">Wallets</a></li>
+                                    <li><a href="Belts" target="_blank">Belts</a></li>
+                                    <li><a href="Hats&Caps" target="_blank">Hats&Caps</a></li>
+                                    <li><a href="GiftSets" target="_blank">GiftSets</a></li>
+                                    <li><a href="Neckties&Cravats" target="_blank">Neckties&Cravats</a></li>
+                                    <li><a href="CardHolders" target="_blank">CardHolders</a></li>
+                                    <li><a href="Keychains" target="_blank">Keychains</a></li>
+                                    <li><a href="Suspenders" target="_blank">Suspenders</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="FRAGRANCES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FRAGRANCES</a></li>
+                                    <li><a href="Perfumes" target="_blank">Perfumes</a></li>
+                                    <li><a href="Deodorants" target="_blank">Deodorants</a></li>
+                                    <li><a href="Attars(Non-Alcoholic)" target="_blank">Attars(Non-Alcoholic)</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Women'sFashion" target="_blank">Women'sFashion</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="ETHNICWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">ETHNICWEAR</a></li>
+                                    <li><a href="Sarees" target="_blank">Sarees</a></li>
+                                    <li><a href="Kurtas&Kurtis" target="_blank">Kurtas&Kurtis</a></li>
+                                    <li><a href="SalwarSuits" target="_blank">SalwarSuits</a></li>
+                                    <li><a href="Lehengas" target="_blank">Lehengas</a></li>
+                                    <li><a href="Salwars&Leggings" target="_blank">Salwars&Leggings</a></li>
+                                    <li><a href="Blouses&Petticoats" target="_blank">Blouses&Petticoats</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="FOOTWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FOOTWEAR</a></li>
+                                    <li><a href="Heels" target="_blank">Heels</a></li>
+                                    <li><a href="Flats&Sandals" target="_blank">Flats&Sandals</a></li>
+                                    <li><a href="Slippers&FlipFlops" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">Slippers&FlipFlops</a></li>
+                                    <li><a href="Ballerinas" target="_blank">Ballerinas</a></li>
+                                    <li><a href="CasualShoes" target="_blank">CasualShoes</a></li>
+                                    <li><a href="SportsShoes" target="_blank">SportsShoes</a></li>
+                                    <li><a href="EthnicFootwear" target="_blank">EthnicFootwear</a></li>
+                                    <li><a href="FloaterSandal" target="_blank">FloaterSandal</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="PERFUMES&FRAGRANCES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">PERFUMES&FRAGRANCES</a></li>
+                                    <li><a href="Perfumes" target="_blank">Perfumes</a></li>
+                                    <li><a href="Deodorants" target="_blank">Deodorants</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="WESTERNWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">WESTERNWEAR</a></li>
+                                    <li><a href="Dresses" target="_blank">Dresses</a></li>
+                                    <li><a href="Tops&Tunics" target="_blank">Tops&Tunics</a></li>
+                                    <li><a href="T-Shirts" target="_blank">T-Shirts</a></li>
+                                    <li><a href="Shirts" target="_blank">Shirts</a></li>
+                                    <li><a href="Denims&Trousers" target="_blank">Denims&Trousers</a></li>
+                                    <li><a href="Pants&Palazzos" target="_blank">Pants&Palazzos</a></li>
+                                    <li><a href="Innerwear" target="_blank">Innerwear</a></li>
+                                    <li><a href="Nightwear" target="_blank">Nightwear</a></li>
+                                    <li><a href="Sportswear" target="_blank">Sportswear</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="WINTERWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">WINTERWEAR</a></li>
+                                    <li><a href="Outerwear&Jackets" target="_blank">Outerwear&Jackets</a></li>
+                                    <li><a href="Sweatshirts" target="_blank">Sweatshirts</a></li>
+                                    <li><a href="Cardigans&Pullovers" target="_blank">Cardigans&Pullovers</a></li>
+                                    <li><a href="Shrugs&Waistcoats" target="_blank">Shrugs&Waistcoats</a></li>
+                                    <li><a href="MATERNITYWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">MATERNITYWEAR</a></li>
+                                    <li><a href="HANDBAGS&CLUTCHES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HANDBAGS&CLUTCHES</a></li>
+                                    <li><a href="Handbags" target="_blank">Handbags</a></li>
+                                    <li><a href="Wallets" target="_blank">Wallets</a></li>
+                                    <li><a href="Clutches" target="_blank">Clutches</a></li>
+                                    <li><a href="Utilitybags" target="_blank">Utilitybags</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="EYEWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">EYEWEAR</a></li>
+                                    <li><a href="Sunglasses" target="_blank">Sunglasses</a></li>
+                                    <li><a href="SpectacleFrames" target="_blank">SpectacleFrames</a></li>
+                                    <li><a href="WATCHES" target="_blank">WATCHES</a></li>
+                                    <li><a href="FASHIONJEWELLERY" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FASHIONJEWELLERY</a></li>
+                                    <li><a href="Necklaces&Sets" target="_blank">Necklaces&Sets</a></li>
+                                    <li><a href="Earrings" target="_blank">Earrings</a></li>
+                                    <li><a href="Bangles&Bracelets" target="_blank">Bangles&Bracelets</a></li>
+                                    <li><a href="Pendants&Sets" target="_blank">Pendants&Sets</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="GOLDCOINS&BARS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">GOLDCOINS&BARS</a></li>
+                                    <li><a href="FASHIONACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FASHIONACCESSORIES</a></li>
+                                    <li><a href="HairAccessories" target="_blank">HairAccessories</a></li>
+                                    <li><a href="Stoles&Scarves" target="_blank">Stoles&Scarves</a></li>
+                                    <li><a href="Socks&Stockings" target="_blank">Socks&Stockings</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Home&Kitchen" target="_blank">Home&Kitchen</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="KITCHENAPPLIANCES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">KITCHENAPPLIANCES</a></li>
+                                    <li><a href="JuicerMixerGrinders" target="_blank">JuicerMixerGrinders</a></li>
+                                    <li><a href="WaterPurifiers" target="_blank">WaterPurifiers</a></li>
+                                    <li><a href="GasStoves&Hobs" target="_blank">GasStoves&Hobs</a></li>
+                                    <li><a href="Chimneys" target="_blank">Chimneys</a></li>
+                                    <li><a href="InductionCooktops" target="_blank">InductionCooktops</a></li>
+                                    <li><a href="Kettles&CoffeeMakers" target="_blank">Kettles&CoffeeMakers</a></li>
+                                    <li><a href="Choppers&Blenders" target="_blank">Choppers&Blenders</a></li>
+                                    <li><a href="SandwichMakers" target="_blank">SandwichMakers</a></li>
+                                    <li><a href="RotiMakers" target="_blank">RotiMakers</a></li>
+                                    <li><a href="ElectricCookers" target="_blank">ElectricCookers</a></li>
+                                    <li><a href="AirFryers" target="_blank">AirFryers</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="KITCHENWARE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">KITCHENWARE</a></li>
+                                    <li><a href="Cookware&Bakeware" target="_blank">Cookware&Bakeware</a></li>
+                                    <li><a href="KitchenStorage" target="_blank">KitchenStorage</a></li>
+                                    <li><a href="Dining&Serving" target="_blank">Dining&Serving</a></li>
+                                    <li><a href="KitchenTools" target="_blank">KitchenTools</a></li>
+                                    <li><a href="PressureCookers" target="_blank">PressureCookers</a></li>
+                                    <li><a href="WaterBottles" target="_blank">WaterBottles</a></li>
+                                    <li><a href="Tea&Coffeeware" target="_blank">Tea&Coffeeware</a></li>
+                                    <li><a href="BarAccessories" target="_blank">BarAccessories</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="HOMEFURNISHING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HOMEFURNISHING</a></li>
+                                    <li><a href="BedLinen" target="_blank">BedLinen</a></li>
+                                    <li><a href="BathLinen" target="_blank">BathLinen</a></li>
+                                    <li><a href="Blankets&Quilts" target="_blank">Blankets&Quilts</a></li>
+                                    <li><a href="Curtains&Accessories" target="_blank">Curtains&Accessories</a></li>
+                                    <li><a href="Mattresses" target="_blank">Mattresses</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="FURNITURE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FURNITURE</a></li>
+                                    <li><a href="Storage&Display" target="_blank">Storage&Display</a></li>
+                                    <li><a href="BeanBags" target="_blank">BeanBags</a></li>
+                                    <li><a href="Tables&Desks" target="_blank">Tables&Desks</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="HOMEDÉCOR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HOMEDÉCOR</a></li>
+                                    <li><a href="LightingFixtures" target="_blank">LightingFixtures</a></li>
+                                    <li><a href="WallDecor" target="_blank">WallDecor</a></li>
+                                    <li><a href="Gifts&Decor" target="_blank">Gifts&Decor</a></li>
+                                    <li><a href="Religion&Spirituality" target="_blank">Religion&Spirituality</a></li>
+                                    <li><a href="LEDBulbs" target="_blank">LEDBulbs</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="HOMEIMPROVEMENT" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HOMEIMPROVEMENT</a></li>
+                                    <li><a href="HomeUtility" target="_blank">HomeUtility</a></li>
+                                    <li><a href="CleaningMops" target="_blank">CleaningMops</a></li>
+                                    <li><a href="Plants&Gardening" target="_blank">Plants&Gardening</a></li>
+                                    <li><a href="IroningBoards" target="_blank">IroningBoards</a></li>
+                                    <li><a href="HomeCleaning" target="_blank">HomeCleaning</a></li>
+                                    <li><a href="LaundryAccessories" target="_blank">LaundryAccessories</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="TOOLS&HARDWARE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">TOOLS&HARDWARE</a></li>
+                                    <li><a href="Power&HandTools" target="_blank">Power&HandTools</a></li>
+                                    <li><a href="BathroomAccessories" target="_blank">BathroomAccessories</a></li>
+                                    <li><a href="Electrical" target="_blank">Electrical</a></li>
+                                    <li><a href="Taps&Showers" target="_blank">Taps&Showers</a></li>
+                                    <li><a href="SafesLock&DoorFitting" target="_blank">SafesLock&DoorFitting</a></li>
+                                    <li><a href="Sanitaryware" target="_blank">Sanitaryware</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="PETSUPPLIES" target="_blank">PETSUPPLIES</a></li>
+                                    <li><a href="DogSupplies" target="_blank">DogSupplies</a></li>
+                                    <li><a href="CatSupplies" target="_blank">CatSupplies</a></li>
+                                    <li><a href="Fish&AquaticSupplies" target="_blank">Fish&AquaticSupplies</a></li>
+                                    <li><a href="BirdSupplies" target="_blank">BirdSupplies</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Toys,Kids'Fashion&more" target="_blank">Toys,Kids'Fashion&more</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="TOYS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">TOYS</a></li>
+                                    <li><a href="ToyCars" target="_blank">ToyCars</a></li>
+                                    <li><a href="ElectronicToys" target="_blank">ElectronicToys</a></li>
+                                    <li><a href="ActionToys&Figures" target="_blank">ActionToys&Figures</a></li>
+                                    <li><a href="RideOn&Scooters" target="_blank">RideOn&Scooters</a></li>
+                                    <li><a href="OutdoorToys" target="_blank">OutdoorToys</a></li>
+                                    <li><a href="SoftToys" target="_blank">SoftToys</a></li>
+                                    <li><a href="EducationalToys" target="_blank">EducationalToys</a></li>
+                                    <li><a href="ToddlerToys" target="_blank">ToddlerToys</a></li>
+                                    <li><a href="Dolls&DollHouses" target="_blank">Dolls&DollHouses</a></li>
+                                    <li><a href="ActivitySets" target="_blank">ActivitySets</a></li>
+                                    <li><a href="Indoor&BoardGames" target="_blank">Indoor&BoardGames</a></li>
+                                    <li><a href="PartySupplies" target="_blank">PartySupplies</a></li>
+                                    <li><a href="BICYCLES&TRICYCLES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BICYCLES&TRICYCLES</a></li>
+                                    <li><a href="KIDS'FOOTWEAR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">KIDS'FOOTWEAR</a></li>
+                                    <li><a href="BoysFootwear" target="_blank">BoysFootwear</a></li>
+                                    <li><a href="GirlsFootwear" target="_blank">GirlsFootwear</a></li>
+                                    <li><a href="BabyFootwear" target="_blank">BabyFootwear</a></li>
+                                    <li><a href="ACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">ACCESSORIES</a></li>
+                                    <li><a href="Eyewear" target="_blank">Eyewear</a></li>
+                                    <li><a href="KIDS'WATCHES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">KIDS'WATCHES</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="KIDS'CLOTHING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">KIDS'CLOTHING</a></li>
+                                    <li><a href="GIRLS'CLOTHING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">GIRLS'CLOTHING</a></li>
+                                    <li><a href="Frocks&Dresses" target="_blank">Frocks&Dresses</a></li>
+                                    <li><a href="LehengaCholis&Sarees" target="_blank">LehengaCholis&Sarees</a></li>
+                                    <li><a href="Jeans&Pants" target="_blank">Jeans&Pants</a></li>
+                                    <li><a href="SuitSets" target="_blank">SuitSets</a></li>
+                                    <li><a href="Tops,Tees&Shirts" target="_blank">Tops,Tees&Shirts</a></li>
+                                    <li><a href="Leggings&Jeggings" target="_blank">Leggings&Jeggings</a></li>
+                                    <li><a href="Top&BottomSets" target="_blank">Top&BottomSets</a></li>
+                                    <li><a href="BOYS'CLOTHING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BOYS'CLOTHING</a></li>
+                                    <li><a href="TopWear" target="_blank">TopWear</a></li>
+                                    <li><a href="Top&BottomSets" target="_blank">Top&BottomSets</a></li>
+                                    <li><a href="BottomWear" target="_blank">BottomWear</a></li>
+                                    <li><a href="Ethnicwear" target="_blank">Ethnicwear</a></li>
+                                    <li><a href="Innerwear" target="_blank">Innerwear</a></li>
+                                    <li><a href="Nightwear" target="_blank">Nightwear</a></li>
+                                    <li><a href="BABYCLOTHING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BABYCLOTHING</a></li>
+                                    <li><a href="Top&BottomSets" target="_blank">Top&BottomSets</a></li>
+                                    <li><a href="Frocks,Dresses&Skirts" target="_blank">Frocks,Dresses&Skirts</a></li>
+                                    <li><a href="Rompers&BodySuits" target="_blank">Rompers&BodySuits</a></li>
+                                    <li><a href="Shirts,T-Shirts&Tops" target="_blank">Shirts,T-Shirts&Tops</a></li>
+                                    <li><a href="BottomWear" target="_blank">BottomWear</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="BABYCARE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BABYCARE</a></li>
+                                    <li><a href="BabyMosquitoNets" target="_blank">BabyMosquitoNets</a></li>
+                                    <li><a href="BabyBlankets" target="_blank">BabyBlankets</a></li>
+                                    <li><a href="BabyCarriers" target="_blank">BabyCarriers</a></li>
+                                    <li><a href="BabyStrollers" target="_blank">BabyStrollers</a></li>
+                                    <li><a href="Walkers" target="_blank">Walkers</a></li>
+                                    <li><a href="Feeding&Nursing" target="_blank">Feeding&Nursing</a></li>
+                                    <li><a href="LABEQUIPMENT" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">LABEQUIPMENT</a></li>
+                                    <li><a href="STATIONERY" target="_blank">STATIONERY</a></li>
+                                    <li><a href="Pens&Markers" target="_blank">Pens&Markers</a></li>
+                                    <li><a href="PencilBoxes" target="_blank">PencilBoxes</a></li>
+                                    <li><a href="Files&Folders" target="_blank">Files&Folders</a></li>
+                                    <li><a href="Calculators" target="_blank">Calculators</a></li>
+                                    <li><a href="Diaries&Planners" target="_blank">Diaries&Planners</a></li>
+                                    <li><a href="PrintingPapers" target="_blank">PrintingPapers</a></li>
+                                    <li><a href="Notebooks&WritingPads" target="_blank">Notebooks&WritingPads</a></li>
+                                    <li><a href="Art&CraftSupplies" target="_blank">Art&CraftSupplies</a></li>
+                                    <li><a href="PhotoPapers" target="_blank">PhotoPapers</a></li>
+                                    <li><a href="Tapes" target="_blank">Tapes</a></li>
+                                    <li><a href="CardHolders" target="_blank">CardHolders</a></li>
+                                    <li><a href="Staplers" target="_blank">Staplers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Beauty,Health&Daily" target="_blank">Beauty,Health&Daily</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="BEAUTY" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BEAUTY</a></li>
+                                    <li><a href="Face" target="_blank">Face</a></li>
+                                    <li><a href="Eyes" target="_blank">Eyes</a></li>
+                                    <li><a href="Lips" target="_blank">Lips</a></li>
+                                    <li><a href="Nails" target="_blank">Nails</a></li>
+                                    <li><a href="MakeupPalettes" target="_blank">MakeupPalettes</a></li>
+                                    <li><a href="Brushes&Applicators" target="_blank">Brushes&Applicators</a></li>
+                                    <li><a href="PERSONALCARE&GROOMING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">PERSONALCARE&GROOMING</a></li>
+                                    <li><a href="SkinCare" target="_blank">SkinCare</a></li>
+                                    <li><a href="HairCare" target="_blank">HairCare</a></li>
+                                    <li><a href="Bath&Shower" target="_blank">Bath&Shower</a></li>
+                                    <li><a href="OralCare" target="_blank">OralCare</a></li>
+                                    <li><a href="Men'sGrooming" target="_blank">Men'sGrooming</a></li>
+                                    <li><a href="FeminineHygiene" target="_blank">FeminineHygiene</a></li>
+                                    <li><a href="Waxing&HairRemoval" target="_blank">Waxing&HairRemoval</a></li>
+                                    <li><a href="Deodorants&Roll-ons" target="_blank">Deodorants&Roll-ons</a></li>
+                                    <li><a href="SEXUALWELLNESS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">SEXUALWELLNESS</a></li>
+                                    <li><a href="Condoms" target="_blank">Condoms</a></li>
+                                    <li><a href="Lubes" target="_blank">Lubes</a></li>
+                                    <li><a href="AdultSexToys" target="_blank">AdultSexToys</a></li>
+                                    <li><a href="Performance&Enlargement" target="_blank">Performance&Enlargement</a>
+                                    </li>
+                                    <li><a href="SexyLingerie" target="_blank">SexyLingerie</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="FOODANDGOURMET" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FOODANDGOURMET</a></li>
+                                    <li><a href="Tea,Coffee&Beverages" target="_blank">Tea,Coffee&Beverages</a></li>
+                                    <li><a href="Noodles,Soups&Pastas" target="_blank">Noodles,Soups&Pastas</a></li>
+                                    <li><a href="Biscuits" target="_blank">Biscuits</a></li>
+                                    <li><a href="BreakfastFoods" target="_blank">BreakfastFoods</a></li>
+                                    <li><a href="ReadyToCook&Eat" target="_blank">ReadyToCook&Eat</a></li>
+                                    <li><a href="Sauces&Dressings" target="_blank">Sauces&Dressings</a></li>
+                                    <li><a href="BakingEssentials" target="_blank">BakingEssentials</a></li>
+                                    <li><a href="Chocolates&Candies" target="_blank">Chocolates&Candies</a></li>
+                                    <li><a href="Staples,Oils&Spices" target="_blank">Staples,Oils&Spices</a></li>
+                                    <li><a href="DryFruits&GiftsBoxes" target="_blank">DryFruits&GiftsBoxes</a></li>
+                                    <li><a href="NUTRITION&SUPPLEMENTS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">NUTRITION&SUPPLEMENTS</a></li>
+                                    <li><a href="Proteins" target="_blank">Proteins</a></li>
+                                    <li><a href="Vitamins&Minerals" target="_blank">Vitamins&Minerals</a></li>
+                                    <li><a href="HealthDrinks" target="_blank">HealthDrinks</a></li>
+                                    <li><a href="MealReplacements" target="_blank">MealReplacements</a></li>
+                                    <li><a href="WeightGainers" target="_blank">WeightGainers</a></li>
+                                    <li><a href="WorkoutSupplements" target="_blank">WorkoutSupplements</a></li>
+                                    <li><a href="MuscleSupport" target="_blank">MuscleSupport</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="HEALTHMONITORINGDEVICES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HEALTHMONITORINGDEVICES</a></li>
+                                    <li><a href="BPMonitors" target="_blank">BPMonitors</a></li>
+                                    <li><a href="DiabeticCare" target="_blank">DiabeticCare</a></li>
+                                    <li><a href="WeighingScales" target="_blank">WeighingScales</a></li>
+                                    <li><a href="BodyFatAnalysers" target="_blank">BodyFatAnalysers</a></li>
+                                    <li><a href="Respiratory&HeartCare" target="_blank">Respiratory&HeartCare</a></li>
+                                    <li><a href="Thermometers" target="_blank">Thermometers</a></li>
+                                    <li><a href="GENERALWELLNESS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">GENERALWELLNESS</a></li>
+                                    <li><a href="Massagers&PainRelief" target="_blank">Massagers&PainRelief</a></li>
+                                    <li><a href="MobilityRehabilitation" target="_blank">MobilityRehabilitation</a></li>
+                                    <li><a href="FirstAid" target="_blank">FirstAid</a></li>
+                                    <li><a href="NicotineGums" target="_blank">NicotineGums</a></li>
+                                    <li><a href="BABYCARE" target="_blank">BABYCARE</a></li>
+                                    <li><a href="Diapers&PottyTraining" target="_blank">Diapers&PottyTraining</a></li>
+                                    <li><a href="Bath,Skin&Healthcare" target="_blank">Bath,Skin&Healthcare</a></li>
+                                    <li><a href="BabyFood" target="_blank">BabyFood</a></li>
+                                    <li><a href="HOUSEHOLDESSENTIALS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HOUSEHOLDESSENTIALS</a></li>
+                                    <li><a href="Detergents&FabricCare" target="_blank">Detergents&FabricCare</a></li>
+                                    <li><a href="House&KitchenCleaners" target="_blank">House&KitchenCleaners</a></li>
+                                    <li><a href="Repellents" target="_blank">Repellents</a></li>
+                                    <li><a href="AirFresheners" target="_blank">AirFresheners</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="MORECATEGORIES" target="_blank"
+                            style="font-weight:bold;margin-top: 20px;">MORECATEGORIES</a></li>
+                    <li><a href="Automotives" target="_blank">Automotives</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="AUTOMOTIVEACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">AUTOMOTIVEACCESSORIES</a></li>
+                                    <li><a href="CAR&VEHICLEELECTRONICS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">CAR&VEHICLEELECTRONICS</a></li>
+                                    <li><a href="CarStereos&Monitors" target="_blank">CarStereos&Monitors</a></li>
+                                    <li><a href="CarSpeakers&Tweeters" target="_blank">CarSpeakers&Tweeters</a></li>
+                                    <li><a href="BluetoothDevices" target="_blank">BluetoothDevices</a></li>
+                                    <li><a href="CarGPSNavigation" target="_blank">CarGPSNavigation</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="CARACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">CARACCESSORIES</a></li>
+                                    <li><a href="CarBodyCovers" target="_blank">CarBodyCovers</a></li>
+                                    <li><a href="CarMobileChargers" target="_blank">CarMobileChargers</a></li>
+                                    <li><a href="CarMobileHolders" target="_blank">CarMobileHolders</a></li>
+                                    <li><a href="CarFootMats" target="_blank">CarFootMats</a></li>
+                                    <li><a href="TYREINFLATORS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">TYREINFLATORS</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="CARFRESHENERS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">CARFRESHENERS</a></li>
+                                    <li><a href="AIRPURIFIERS&IONIZERS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">AIRPURIFIERS&IONIZERS</a></li>
+                                    <li><a href="BIKERGEAR&ACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BIKERGEAR&ACCESSORIES</a></li>
+                                    <li><a href="BikeBodyCovers" target="_blank">BikeBodyCovers</a></li>
+                                    <li><a href="BikerProtectiveGear" target="_blank">BikerProtectiveGear</a></li>
+                                    <li><a href="BIKERRAINCOATS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BIKERRAINCOATS</a></li>
+                                    <li><a href="HELMETS&ACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HELMETS&ACCESSORIES</a></li>
+                                    <li><a href="HelmetAccessories" target="_blank">HelmetAccessories</a></li>
+                                    <li><a href="PARTS&SPARES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">PARTS&SPARES</a></li>
+                                    <li><a href="Filters" target="_blank">Filters</a></li>
+                                    <li><a href="Lighting" target="_blank">Lighting</a></li>
+                                    <li><a href="ExternalParts" target="_blank">ExternalParts</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="TYRES&ALLOYS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">TYRES&ALLOYS</a></li>
+                                    <li><a href="CarTyres" target="_blank">CarTyres</a></li>
+                                    <li><a href="BikeTyres" target="_blank">BikeTyres</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Mobile&Accessories" target="_blank">Mobile&Accessories</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="MOBILECASES&COVERS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">MOBILECASES&COVERS</a></li>
+                                    <li><a href="PrintedBackCovers" target="_blank">PrintedBackCovers</a></li>
+                                    <li><a href="PlainBackCovers" target="_blank">PlainBackCovers</a></li>
+                                    <li><a href="FlipCovers" target="_blank">FlipCovers</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="POWERBANKS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">POWERBANKS</a></li>
+                                    <li><a href="Ambrane" target="_blank">Ambrane</a></li>
+                                    <li><a href="Intex" target="_blank">Intex</a></li>
+                                    <li><a href="Syska" target="_blank">Syska</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="MOBILEACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">MOBILEACCESSORIES</a></li>
+                                    <li><a href="ScreenGuards" target="_blank">ScreenGuards</a></li>
+                                    <li><a href="Cables&Chargers" target="_blank">Cables&Chargers</a></li>
+                                    <li><a href="SelfieSticks" target="_blank">SelfieSticks</a></li>
+                                    <li><a href="BluetoothDevices" target="_blank">BluetoothDevices</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="LifeLike" target="_blank">LifeLike</a></li>
+                                    <li><a href="TopSellingWearables" target="_blank">TopSellingWearables</a></li>
+                                    <li><a href="MEMORYCARDS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">MEMORYCARDS</a></li>
+                                </ul>
+                            </div>
+
+                    </li>
+                    <li><a href="Electronics" target="_blank">Electronics</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="SPEAKERS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">SPEAKERS</a></li>
+                                    <li><a href="HomeAudioSystems" target="_blank">HomeAudioSystems</a></li>
+                                    <li><a href="BluetoothSpeakers" target="_blank">BluetoothSpeakers</a></li>
+                                    <li><a href="2.0Speakers" target="_blank">2.0Speakers</a></li>
+                                    <li><a href="HEADPHONE&EARPHONES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HEADPHONE&EARPHONES</a></li>
+                                    <li><a href="Headphones" target="_blank">Headphones</a></li>
+                                    <li><a href="Earphones" target="_blank">Earphones</a></li>
+                                    <li><a href="Headsetswithmic" target="_blank">Headsetswithmic</a></li>
+                                    <li><a href="AUDIO&VIDEO" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">AUDIO&VIDEO</a></li>
+                                    <li><a href="MP3&MediaPlayers" target="_blank">MP3&MediaPlayers</a></li>
+                                    <li><a href="Projectors" target="_blank">Projectors</a></li>
+                                    <li><a href="Audio&VideoAccessories" target="_blank">Audio&VideoAccessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="ALLLARGEAPPLIANCES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">ALLLARGEAPPLIANCES</a></li>
+                                    <li><a href="Geysers" target="_blank">Geysers</a></li>
+                                    <li><a href="ImmersionRods" target="_blank">ImmersionRods</a></li>
+                                    <li><a href="RoomHeaters" target="_blank">RoomHeaters</a></li>
+                                    <li><a href="FANS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">FANS</a></li>
+                                    <li><a href="CeilingFans" target="_blank">CeilingFans</a></li>
+                                    <li><a href="TableFans" target="_blank">TableFans</a></li>
+                                    <li><a href="ExhaustFans" target="_blank">ExhaustFans</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="HOMEAPPLIANCES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HOMEAPPLIANCES</a></li>
+                                    <li><a href="Microwaves&OTG" target="_blank">Microwaves&OTG</a></li>
+                                    <li><a href="AirPurifiers" target="_blank">AirPurifiers</a></li>
+                                    <li><a href="VacuumCleaners" target="_blank">VacuumCleaners</a></li>
+                                    <li><a href="Irons" target="_blank">Irons</a></li>
+                                    <li><a href="LandlinePhones" target="_blank">LandlinePhones</a></li>
+                                    <li><a href="HomeSecuritySystems" target="_blank">HomeSecuritySystems</a></li>
+                                    <li><a href="SewingMachines" target="_blank">SewingMachines</a></li>
+                                    <li><a href="GROOMINGAPPLIANCES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">GROOMINGAPPLIANCES</a></li>
+                                    <li><a href="Trimmers" target="_blank">Trimmers</a></li>
+                                    <li><a href="Shavers" target="_blank">Shavers</a></li>
+                                    <li><a href="HairDryers" target="_blank">HairDryers</a></li>
+                                    <li><a href="HairStraighteners" target="_blank">HairStraighteners</a></li>
+                                    <li><a href="HairCurlers&More" target="_blank">HairCurlers&More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Sports,Fitness&Outdoor" target="_blank">Sports,Fitness&Outdoor</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="SPORTS&FITNESS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">SPORTS&FITNESS</a></li>
+                                    <li><a href="GETFITATHOME" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">GETFITATHOME</a></li>
+                                    <li><a href="HomeGym" target="_blank">HomeGym</a></li>
+                                    <li><a href="Dumbbells" target="_blank">Dumbbells</a></li>
+                                    <li><a href="Treadmills" target="_blank">Treadmills</a></li>
+                                    <li><a href="AbdominalExercisers" target="_blank">AbdominalExercisers</a></li>
+                                    <li><a href="ExerciseBikes" target="_blank">ExerciseBikes</a></li>
+                                    <li><a href="YogaMats" target="_blank">YogaMats</a></li>
+                                    <li><a href="ExerciseBenches" target="_blank">ExerciseBenches</a></li>
+                                    <li><a href="WeighingScales" target="_blank">WeighingScales</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="GETREADYFORGYM" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">GETREADYFORGYM</a></li>
+                                    <li><a href="SportsFootwear" target="_blank">SportsFootwear</a></li>
+                                    <li><a href="FitnessGadgets" target="_blank">FitnessGadgets</a></li>
+                                    <li><a href="Sippers" target="_blank">Sippers</a></li>
+                                    <li><a href="GymGloves" target="_blank">GymGloves</a></li>
+                                    <li><a href="SportsNutrition" target="_blank">SportsNutrition</a></li>
+                                    <li><a href="GymBags" target="_blank">GymBags</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="SPORTS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">SPORTS</a></li>
+                                    <li><a href="Running" target="_blank">Running</a></li>
+                                    <li><a href="Cricket" target="_blank">Cricket</a></li>
+                                    <li><a href="KidsCycles" target="_blank">KidsCycles</a></li>
+                                    <li><a href="AdultCycles" target="_blank">AdultCycles</a></li>
+                                    <li><a href="BicycleAccessories" target="_blank">BicycleAccessories</a></li>
+                                    <li><a href="Badminton" target="_blank">Badminton</a></li>
+                                    <li><a href="Football" target="_blank">Football</a></li>
+                                    <li><a href="Basketball" target="_blank">Basketball</a></li>
+                                    <li><a href="Skating" target="_blank">Skating</a></li>
+                                    <li><a href="ArcheryandShooting" target="_blank">ArcheryandShooting</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="HIKING&OUTDOOR" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">HIKING&OUTDOOR</a></li>
+                                    <li><a href="Knives&Tools" target="_blank">Knives&Tools</a></li>
+                                    <li><a href="Backpacks" target="_blank">Backpacks</a></li>
+                                    <li><a href="HikingBags" target="_blank">HikingBags</a></li>
+                                    <li><a href="Luggage&Suitcases" target="_blank">Luggage&Suitcases</a></li>
+                                    <li><a href="TravelAccessories" target="_blank">TravelAccessories</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li><a href="Computers&Gaming" target="_blank">Computers&Gaming</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="PrinterInks&Toners" target="_blank">PrinterInks&Toners</a></li>
+                                    <li><a href="STORAGE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">STORAGE</a></li>
+                                    <li><a href="ExternalHardDrives" target="_blank">ExternalHardDrives</a></li>
+                                    <li><a href="Memorycards" target="_blank">Memorycards</a></li>
+                                    <li><a href="PenDrives" target="_blank">PenDrives</a></li>
+                                    <li><a href="SSD" target="_blank">SSD</a></li>
+                                    <li><a href="NETWORKINGDEVICES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">NETWORKINGDEVICES</a></li>
+                                    <li><a href="DataCards" target="_blank">DataCards</a></li>
+                                    <li><a href="Dongles" target="_blank">Dongles</a></li>
+                                    <li><a href="Routers" target="_blank">Routers</a></li>
+                                    <li><a href="OFFICEEQUIPMENT&SUPPLY" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">OFFICEEQUIPMENT&SUPPLY</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="COMPUTERACCESSORIES" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">COMPUTERACCESSORIES</a></li>
+                                    <li><a href="Keyboards" target="_blank">Keyboards</a></li>
+                                    <li><a href="Mouse" target="_blank">Mouse</a></li>
+                                    <li><a href="Webcams" target="_blank">Webcams</a></li>
+                                    <li><a href="LaptopSkins" target="_blank">LaptopSkins</a></li>
+                                    <li><a href="CoolingPads" target="_blank">CoolingPads</a></li>
+                                    <li><a href="ExtensionCords" target="_blank">ExtensionCords</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="GAMING" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">GAMING</a></li>
+                                    <li><a href="GamingAccessories" target="_blank">GamingAccessories</a></li>
+                                    <li><a href="GamingTitles" target="_blank">GamingTitles</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="COMPUTERCOMPONENTS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">COMPUTERCOMPONENTS</a></li>
+                                    <li><a href="RAM" target="_blank">RAM</a></li>
+                                    <li><a href="InternalHardDrive" target="_blank">InternalHardDrive</a></li>
+                                    <li><a href="UPS" target="_blank">UPS</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                    <li><a href="SOFTWARE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">SOFTWARE</a></li>
+                                    <li><a href="Antivirus" target="_blank">Antivirus</a></li>
+                                    <li><a href="OperatingSystem" target="_blank">OperatingSystem</a></li>
+                                    <li><a href="ViewAll" target="_blank" style="color:blue">ViewAll&nbsp;ᐳ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Books, Media & Music" target="_blank">Books, Media & Music</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="VIEWALLBOOKS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">VIEWALLBOOKS</a></li>
+                                    <li><a href="TOPEXAMS" target="_blank">TOPEXAMS</a></li>
+                                    <li><a href="GATE" target="_blank">GATE</a></li>
+                                    <li><a href="IITJEE" target="_blank">IITJEE</a></li>
+                                    <li><a href="NEET" target="_blank">NEET</a></li>
+                                    <li><a href="BANKPO" target="_blank">BANKPO</a></li>
+                                    <li><a href="UGCNet" target="_blank">UGCNet</a></li>
+                                    <li><a href="UPSC" target="_blank">UPSC</a></li>
+                                    <li><a href="BROWSEBYGENRE" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">BROWSEBYGENRE</a></li>
+                                    <li><a href="SchoolTexts" target="_blank">SchoolTexts</a></li>
+                                    <li><a href="CompetitiveExams" target="_blank">CompetitiveExams</a></li>
+                                    <li><a href="Academic&Professional" target="_blank">Academic&Professional</a></li>
+                                    <li><a href="Children&YoungAdults" target="_blank">Children&YoungAdults</a></li>
+                                    <li><a href="Non-Fiction" target="_blank">Non-Fiction</a></li>
+                                    <li><a href="Literature&Fiction" target="_blank">Literature&Fiction</a></li>
+                                    <li><a href="SelfHelp" target="_blank">SelfHelp</a></li>
+                                    <li><a href="Reference" target="_blank">Reference</a></li>
+                                    <li><a href="ONLINEEDUCATION" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">ONLINEEDUCATION</a></li>
+                                    <li><a href="CoursesunderRs99" target="_blank">CoursesunderRs99</a></li>
+                                    <li><a href="SchoolLearningOnline" target="_blank">SchoolLearningOnline</a></li>
+                                    <li><a href="OnlineTestPreparation" target="_blank">OnlineTestPreparation</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1" id="mens1">
+                                <ul>
+                                    <li><a href="MUSICALINSTRUMENTS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">MUSICALINSTRUMENTS</a></li>
+                                    <li><a href="Guitars" target="_blank">Guitars</a></li>
+                                    <li><a href="Keyboards" target="_blank">Keyboards</a></li>
+                                    <li><a href="StudioEssentials" target="_blank">StudioEssentials</a></li>
+                                    <li><a href="Drums" target="_blank">Drums</a></li>
+                                    <li><a href="GuitarAccessories" target="_blank">GuitarAccessories</a></li>
+                                    <li><a href="KeyboardAccessories" target="_blank">KeyboardAccessories</a></li>
+                                    <li><a href="INDIANINSTRUMENTS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">INDIANINSTRUMENTS</a></li>
+                                    <li><a href="Tabla" target="_blank">Tabla</a></li>
+                                    <li><a href="Flutes" target="_blank">Flutes</a></li>
+                                    <li><a href="OTHERINSTRUMENTS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">OTHERINSTRUMENTS</a></li>
+                                    <li><a href="MouthOrgans" target="_blank">MouthOrgans</a></li>
+                                </ul>
+                            </div>
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="E-GIFTCARDS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">E-GIFTCARDS</a></li>
+                                    <li><a href="Cleartrip" target="_blank">Cleartrip</a></li>
+                                    <li><a href="MakeMyTrip" target="_blank">MakeMyTrip</a></li>
+                                    <li><a href="MOVIES&TVSHOWS" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">MOVIES&TVSHOWS</a></li>
+                                    <li><a href="IndianMusic" target="_blank">IndianMusic</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="Hobbies" target="_blank">Hobbies</a>
+                        <div class="mens">
+                            <div class="mens1">
+                                <ul>
+                                    <li><a href="Arts&Crafts" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">Arts&Crafts</a></li>
+                                    <li><a href="Collectibles" target="_blank"
+                                            style="font-weight:bold;margin-top: 20px;">Collectibles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="down">
+                <ul>
+                    <li><a href="TRENDINGSEARCHES" target="_blank"
+                            style="font-weight:bold;margin-top: 20px;">TRENDINGSEARCHES</a></li>
+                    <li><a href="KitchenProduct" target="_blank">🔍&nbsp;KitchenProduct</a></li>
+                    <li><a href="ShoesForMen" target="_blank">🔍&nbsp;ShoesForMen</a></li>
+                    <li><a href="KurtiSet" target="_blank">🔍&nbsp;KurtiSet</a></li>
+                    <li><a href="SandalMen" target="_blank">🔍&nbsp;SandalMen</a></li>
+                    <li><a href="SportShoeMen" target="_blank">🔍&nbsp;SportShoeMen</a></li>
+                </ul>
+            </div>
+
+            <div class="barcode">
+                <img src="/img/snapdealbarcode.png" alt="">
+            </div>
+        </aside>
+
+        <div class="banner">
+            <marquee scrollamount="10" direction="left" behavior="scroll">
+
+                <img src="/img/snapdealban1.png" alt="">
+                <img src="/img/snapdealban2.png" alt="">
+                <img src="/img/snapdealban3.png" alt="">
+                <img src="/img/snapdealban4.png" alt="">
+                <img src="/img/snapdealban5.png" alt="">
+
+            </marquee>
+        </div>
+
+        <div class="location">
+
+            <div class="location1">
+                <img src="/img/snapdeallocation.png" alt="">
+            </div>
+            <input type="text" placeholder="Enter Pincode" name="search"
+                style="width: 200px; height: 35px;border-radius:5px;border:1px solid grey;"> <br>
+            <div class="btn">
+                <input type="button" value="SUBMIT"
+                    style="background-color: rgb(51,51,51);color:white;width:130px;height:35px;border:none;border-radius:5px;">
+                <input type="button" value="NEXT"
+                    style="background-color: white;color:black;width:60px;height:35px;border-radius:5px;border:1px solid grey;">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="snapapp">
+        <img src="/img/snapdealdownloadapp.png" alt="">
+    </div>
+    <div class="assure">
+        <img src="/img/snapdealassurity.png" alt="">
+    </div>
+
+    <div class="newsletter">
+        <div class="news1">
+            <ul>
+                <li><a href="POLICYINFO" target="_blank">POLICYINFO</a></li>
+                <li><a href="PrivacyPolicy" target="_blank">PrivacyPolicy</a></li>
+                <li><a href="TermsofSale" target="_blank">TermsofSale</a></li>
+                <li><a href="TermsofUse" target="_blank">TermsofUse</a></li>
+                <li><a href="ReportAbuse&TakedownPolicy" target="_blank">ReportAbuse&TakedownPolicy</a></li>
+                <li><a href="FAQ" target="_blank">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="news1">
+            <ul>
+                <li><a href="COMPANY" target="_blank">COMPANY</a></li>
+                <li><a href="Impact@Snapdeal" target="_blank">Impact@Snapdeal</a></li>
+                <li><a href="Careers" target="_blank">Careers</a></li>
+                <li><a href="Blog" target="_blank">Blog</a></li>
+                <li><a href="Sitemap" target="_blank">Sitemap</a></li>
+                <li><a href="ContactUs" target="_blank">ContactUs</a></li>
+            </ul>
+        </div>
+        <div class="news1">
+            <ul>
+                <li><a href="SNAPDEALBUSINESS" target="_blank">SNAPDEALBUSINESS</a></li>
+                <li><a href="ShoppingApp" target="_blank">ShoppingApp</a></li>
+                <li><a href="SellonSnapdeal" target="_blank">SellonSnapdeal</a></li>
+                <li><a href="MediaEnquiries" target="_blank">MediaEnquiries</a></li>
+            </ul>
+        </div>
+        <div class="news1">
+            <ul>
+                <li><a href="POPULARLINKS" target="_blank">POPULARLINKS</a></li>
+                <li><a href="Lehenga" target="_blank">Lehenga</a></li>
+                <li><a href="Kid'sClothing" target="_blank">Kid'sClothing</a></li>
+                <li><a href="Sarees" target="_blank">Sarees</a></li>
+                <li><a href="WinterWear" target="_blank">WinterWear</a></li>
+            </ul>
+        </div>
+
+        <div class="news1">
+            <h2>SUBSCRIBE</h2>
+            <div class="subscribe">
+                <input type="text" placeholder="Your email address" name="search"
+                    style="width: 300px; height: 35px;border:none;border-radius:5px;">
+                <input type="button" value="SUBSCRIBE"
+                    style="background-color: rgb(51,51,51);color:white;width:150px;height:40px;border:none;border-radius:5px;">
+            </div>
+            <p>Register now to get updates on promotions andcoupons. <a href=""> Or Download App</a> </p>
+        </div>
+
+    </div>
+
+    <div class="paymentsocial">
+        <div class="payment">
+            <h2>PAYMENT</h2>
+            <img src="/img/snapdealpayment.png" alt="">
+        </div>
+        <div class="social">
+            <h2>CONNECT</h2>
+            <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+            <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+            <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" />
+            <img src="https://img.icons8.com/color/48/000000/youtube--v1.png" />
+            <img src="https://img.icons8.com/fluency/48/000000/twitter.png" />
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Snapdeal is India's leading pure-play value Ecommerce platform. Founded in 2010 by Kunal Bahl and Rohit
+            Bansal, Snapdeal is one of the top four online lifestyle shopping destinations of India. Snapdeal brings
+            together a wide assortment of good quality and value- priced merchandise on its platform. Snapdeal's vision
+            is to enable the shoppers of Bharat to experience the joy of living their aspirations through reliable,
+            value-for-money shopping. With a personalized, multilingual interface and cutting edge technology, Snapdeal
+            has simplified the shopping experience for its value-conscious buyers by showcasing the most relevant
+            products- products that are a good functional fit with their needs and of a quality that lasts- thereby
+            delivering true value to its customers. With its commitment to high service standards, Snapdeal suppliers
+            operate under a well structured ecosystem that enables them to offer great quality products at affordable
+            prices. With majority of the value-seeking, middle-income, price-conscious buyers coming from the
+            non-metros, Snapdeal’s logistics networks powered by third party logistics cover more than 96% of India’s
+            pin codes enabling order deliveries to more than 2500 towns and cities and expanding. Further, Snapdeal's
+            mission is to become India’s value lifestyle omni-channel leader. We are excited about continuing to build a
+            complete ecosystem around value commerce, where we can serve Bharat consumers wherever they are on their
+            offline to online shopping journey. Snapdeal is part of the AceVector Group and one of India’s best-known
+            e-commerce companies with an exclusive focus on the value segment.</p>
+    </footer>
+    <div class="footdown">
+        <div class="footdleft">Copyright © 2021, Snapdeal Limited. All Rights Reserved,Created By ROSHAN</div>
+        <div class="footright"> <span style="color: red;">❤</span> Made For Bharat</div>
+    </div>
+</body>
+</html>
