@@ -4,7 +4,7 @@
 }
 
 aside {
-  
+
     border-radius: 5px;
     height: 650px;
     box-shadow: 10px 10px 5px black;
@@ -26,7 +26,6 @@ aside div ul li:first-child {
 aside div ul li a {
     text-decoration: none;
     color: black;
-    
     padding: 5px 5px;
     font-size: small;
 
@@ -34,7 +33,7 @@ aside div ul li a {
 
 .top .mens {
     height: 580px;
-    z-index: 1;
+    z-index: 999;
 }
 
 .top ul li a:hover {
@@ -45,8 +44,8 @@ aside div ul li a {
 .top ul li .mens {
     background-color: whitesmoke;
     position: absolute;
-    top: 130px;
-    left: 340px;
+    top: 10px;
+    left: 240px;
     display: none;
 }
 
@@ -57,7 +56,7 @@ aside div ul li a {
 
 .middle .mens {
     height: 500px;
-    z-index: 1;
+    z-index: 999;
 }
 
 #mens1 {
@@ -74,8 +73,8 @@ aside div ul li a {
 .middle ul li .mens {
     background-color: whitesmoke;
     position: absolute;
-    top: 130px;
-    left: 340px;
+    top: 10px;
+    left: 240px;
     display: none;
 }
 
@@ -89,8 +88,12 @@ aside div ul li a {
 }
 
 
-.header {
+header {
     background-color: darkorchid;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 .headtop {
@@ -133,7 +136,7 @@ nav {
 .cartsign ul ul {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .register {
@@ -175,12 +178,12 @@ nav {
 }
 
 .location {
-   
+
     width: 200px;
     height: 290px;
     border-radius: 5px;
     box-shadow: 10px 10px 5px black;
-   
+
 }
 
 .location img {
@@ -198,13 +201,20 @@ nav {
     margin-top: 15px;
     width: 90%;
     margin: auto;
+    position: absolute;
+    top: 140px;
+    left: 50px;
 
 }
 
 .snapapp {
     box-shadow: 10px 10px 5px black;
     width: 90%;
-    margin: 30px auto;
+    /* margin: 30px auto; */
+    margin-top: 800px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -212,18 +222,22 @@ nav {
     width: 90%;
 
 }
-.links{
-    width:90%;
+
+.links {
+    width: 90%;
     margin: auto;
 }
-.links p a{
+
+.links p a {
     text-decoration: none;
     color: black;
 }
-.links p a:first-child{
+
+.links p a:first-child {
     font-weight: bold;
 }
-.links p a:hover{
+
+.links p a:hover {
     text-decoration: underline;
     color: grey;
 }
@@ -267,23 +281,176 @@ nav {
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
 }
-footer{
-    width:90%;
+
+footer {
+    width: 90%;
     margin: auto;
 }
+
 .footdown {
-    width:90%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(212, 211, 211);
 }
-#radius{
+
+#radius {
     border-radius: 20px;
 }
-#flex{
-    display:flex;
-    align-items:center;
+
+#flex {
+    display: flex;
+    align-items: center;
     column-gap: 10px;
+}
+
+.carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 50px auto;
+    border: 2px solid black;
+    /* z-index: -1; */
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url("/img/snapdealban1.png");
+    background-size: cover;
+}
+
+.item-2 {
+    background: url("/img/snapdealban2.png");
+    background-size: cover;
+}
+
+.item-3 {
+    background: url("/img/snapdealban3.png");
+    background-size: cover;
+}
+
+.item-4 {
+    background: url("/img/snapdealban4.png");
+    background-size: cover;
+}
+
+.item-5 {
+    background: url("/img/snapdealban5.png");
+    background-size: cover;
+}
+
+*:target~.item-1 {
+    opacity: 0;
+}
+
+#item-1:target~.item-1 {
+    opacity: 1;
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3,
+#item-4:target~.item-4,
+#item-5:target~.item-5 {
+    z-index: 3;
+    opacity: 1;
+}
+
+#item-1:target~#nav_slide #dot1,
+#item-2:target~#nav_slide #dot2,
+#item-3:target~#nav_slide #dot3,
+#item-4:target~#nav_slide #dot4,
+#item-5:target~#nav_slide #dot5 {
+    border-bottom: 5px solid black;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#nav_slide {
+    width: 100%;
+    bottom: 12%;
+    height: 11px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    cursor: default;
+}
+
+.dots {
+    top: -5px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 10px 45px;
+}
+
+#i1:checked~.item-1,
+#i2:checked~.item-2,
+#i3:checked~.item-3,
+#i4:checked~.item-4,
+#i5:checked~.item-5 {
+    z-index: 3;
+    opacity: 1;
+}
+
+#i1:checked~#nav_slide #dot1,
+#i2:checked~#nav_slide #dot2,
+#i3:checked~#nav_slide #dot3,
+#i4:checked~#nav_slide #dot4,
+#i5:checked~#nav_slide #dot5 {
+    background-color: black;
+    color: white;
+}
+
+#i2:checked~#nav_slide #dot2 #nav_slide {
+    width: 100%;
+    bottom: 12%;
+    height: 11px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    cursor: default;
 }
