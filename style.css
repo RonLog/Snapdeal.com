@@ -355,27 +355,27 @@ footer {
 .item-1 {
     z-index: 2;
     opacity: 1;
-    background: url("./img/snapdealban1.png");
+    background: url('./img/snapdealban1.png');
     background-size: cover;
 }
 
 .item-2 {
-    background: url("./img/snapdealban2.png");
+    background: url('./img/snapdealban2.png');
     background-size: cover;
 }
 
 .item-3 {
-    background: url("./img/snapdealban3.png");
+    background: url('./img/snapdealban3.png');
     background-size: cover;
 }
 
 .item-4 {
-    background: url("./img/snapdealban4.png");
+    background: url('./img/snapdealban4.png');
     background-size: cover;
 }
 
 .item-5 {
-    background: url("./img/snapdealban5.png");
+    background: url('./img/snapdealban5.png');
     background-size: cover;
 }
 
